@@ -1,0 +1,297 @@
+/*-------------------------*/
+/*------ CSS Reset------*/
+/*-------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------*/
+/*----CSS General-----*/
+/*------------*/
+
+body {
+	font-family: 'Roboto Slab', Helvetica, serif;
+}
+
+#container {
+	background: url('images/background-blueprint.jpg') fixed rgb(12,48,110);
+}
+
+h1 {
+	font-size: 1.45em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+.clearfix {
+	clear: both;
+}
+
+p {
+	font-size: 1.2em
+}
+
+label {
+	font-size: 1.2em;
+}
+
+/*--------------------*/
+/*------Header--------*/
+/*--------------------*/
+header {
+	width: 100%;
+	height: 200px;
+	;
+}
+
+	.banner {
+		display: block;
+		float: left;
+		margin: 1% 1% 0px 1%;
+		min-height: 60px;
+		box-sizing: border-box;
+		border: solid 3px #333;
+		box-shadow: 1px 1px 5px gray;
+		width: 420px;
+		
+	}
+
+	.tagline {
+		float: left;
+		height: 100px;
+		width: 60%;
+		padding: 2%;
+		box-sizing: border-box;
+		color: white;
+		text-align: right;
+		margin-top: 8px;
+		margin-left: 2%; 
+		text-shadow: 1px 1px 3px black;
+	}
+
+	.tagline h1{
+	background-color: rgba(12,48,110,.6);
+	}
+
+/*---------------------*/
+/*----Main Section-------*/
+/*---------------------*/
+.main {
+	width: 100%;
+	color: #193BB0;
+}
+
+.about-us {
+	float: left;
+	width: 50%;
+	padding: 2% 5% 1% 5%;
+	background: url('images/aboutus-background.png');
+	height: 310px;
+	box-sizing: border-box;
+
+}
+	.about-us h2 {
+		margin-bottom: 10px;
+	}
+	
+	.about-us p {
+		color: #777777;
+		text-shadow: 1px 1px 1px lightgray;
+		line-height: 1.em;
+		padding-left: 10px;
+	}
+
+.form {
+	float: left;
+	width: 50%;
+	padding: 2% 5% 1% 5%;
+	height: 310px;
+	background: url('images/form-background.png');
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	background-size:100% 100%;
+	box-sizing: border-box;
+}
+	.form h2 {
+		margin-bottom: 10px;
+	}
+
+	.form label.contact {
+		text-align: right;
+		display: inline-block;
+		width: 50px; 
+		color: #333333;
+	}
+
+	.form input {
+		text-indent: 3px;
+	}
+
+	.form input.intro{
+		margin-left: 20px
+	}
+
+	.habitat,
+	.form table {
+		color: #126BC7;
+	}
+
+	.form p {
+		margin-bottom: 6px;
+		color: #333333;
+	}
+
+	.form td {
+		padding: 3px 3px 3px 10px;
+	}
+
+	.form td.other-table {
+		text-align: right;
+	}
+
+/*---------------------*/
+/*------Gallery--------*/
+/*---------------------*/
+.gallery {
+	background: red;
+	width: 100%;
+	height: auto;
+	text-align: center
+}
+
+.gallery img {
+	float: left;
+	width: 29%;
+	height: auto;
+	margin: 2% 1.65% 2% 1.65%;
+	border: 1px solid #aaa;
+}
+
+.testimonial-section {
+	width: 100%;
+}
+
+
+/*---------------------*/
+/*------Gallery--------*/
+/*---------------------*/
+
+.testimonial {
+	float: left;
+	width: 44%;
+	padding: 3%;
+	color: white;
+}
+
+	.testimonial .photo-section {
+		float: left;
+		width: 120px;
+	}
+	
+	.testim-photo img{
+		height: 80px;
+		border-radius: 50%;
+	}
+
+	.testim-photocaption, 
+	.testim-text {
+		background-color: rgba(12,48,110,.75);
+	}
+
+	.testim-photocaption {
+		color: #aaaaaa;
+		font-style: italic;
+		font-size: .7em;
+		margin-top: 5px;
+	}
+
+
+	.testim-text{
+		padding-left: 125px;
+		font-size: .9em;
+	}
+
+footer {
+	width: 100%;
+	padding: 1% 4% 4% 4%;
+	background: #333333;
+	box-sizing: border-box;
+	
+	}
+
+	footer p {
+		width: 250px;
+		float: left;
+		line-height: 25px;
+		color: #fff;
+		font-size: .8em;
+	}
+
+	footer .media {
+		float: right;
+	}
+
+	footer li {
+		display: inline-block;
+		margin-left: 20px;
+	}
+
+	footer li:hover{
+		cursor: pointer;
+	}
+
+	footer li img{
+		float: right;
+		height: 40px;
+		width: 40px;
+	}
+	
+
+
